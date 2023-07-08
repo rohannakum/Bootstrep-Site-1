@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip</title>
+    <!-- Bootstrep link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="bookingForm.css">
+
+</head>
+
+<body>
+    <!-- header Start  -->
+    <header>
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="./image/logo.png" alt="logoimage" style="height:42px;">
+                <a class="navbar-brand" href="./index.html">InfinityTimes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " href="./index.html">Home</a>
+                        <a class="nav-link" href="./place.html">Place</a>
+                        <a class="nav-link active" aria-current="page" href="./bookingForm.html">Book Your Tour</a>
+                        <a class="nav-link" href="./about.html">About</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- main Start -->
+    <main>
+
+
+
+        <!-- Booking Form Start Here -->
+        <div class="form">
+            <form action="">
+                <label for="clientName">Name : </label>
+                <input type="text" id="clientName" required>
+                <br><br>
+                <label for="clientNumber">Mobile Number : </label>
+                <input type="tel" id="clientNumber" required>
+                <br><br>
+                <label for="clientEmail">Email : </label>
+                <input type="email" id="clientEmail" required>
+                <br><br>
+                <label>Gender : </label>
+                <input type="radio" name="gender" value="male" id="radiomale">
+                <label for="radiomale">Male</label>
+                <input type="radio" name="gender" value="female" id="radiofemale">
+                <label for="radiofemale">Female</label>
+                <br><br>
+                <label for="travelDate">Select Your Travel Booking Date : </label>
+                <input type="date" id="travelDate">
+                <br><br>
+                <label>Select Your Trip Location : </label>
+                <div>
+                    <input type="checkbox" name="tripPlace" id="Thailand">
+                    <label for="Thailand">Thailand</label>
+                    <input type="checkbox" name="tripPlace" id="Goa">
+                    <label for="Goa">Goa</label>
+                    <br>
+                    <input type="checkbox" name="tripPlace" id="Vietnam">
+                    <label for="Vietnam">Vietnam</label>
+                    <input type="checkbox" name="tripPlace" id="Paris">
+                    <label for="Paris">Paris</label>
+                    <br>
+                    <input type="checkbox" name="tripPlace" id="Manali">
+                    <label for="Manali">Manali</label>
+                    <input type="checkbox" name="tripPlace" id="London">
+                    <label for="London">London</label>
+                    <br>
+                    <input type="checkbox" name="tripPlace" id="Prague">
+                    <label for="Prague">Prague</label>
+                    <input type="checkbox" name="tripPlace" id="CapeTown">
+                    <label for="CapeTown">Cape Town</label>
+                </div>
+                <br><br>
+                <input type="submit" value="Submit Button" onclick="submitFunctioon()" id="submitButton">
+            </form>
+        </div>
+
+        <!-- JavaScript -->
+        <Script>
+            function submitFunctioon() {
+                alert('Thank You For Booking Trip.');
+            }
+        </Script>
+        <!-- Bootstrep Script Link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+    </main>
+</body>
+
+</html>

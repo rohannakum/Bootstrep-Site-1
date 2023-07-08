@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    height: 7vh !important;
+}
+main{
+    background-color: bisque;
+}
+.logoAndName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.companyName{
+    font-size: 200px;
+}
+.aboutText{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Text{
+    width: 45vw;
+    height: auto;
+}
